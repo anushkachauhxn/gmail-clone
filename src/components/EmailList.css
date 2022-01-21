@@ -1,0 +1,28 @@
+.emailList {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.emailList__settings {
+  padding: 0 10px;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.emailList__settingsLeft ion-icon {
+  font-size: 18px;
+}
+.emailList__settingsLeft ion-icon[name="caret-down-sharp"] {
+  margin-left: -12px;
+  font-size: 12px;
+}
+.emailList__settingsRight ion-icon {
+  font-size: 14px;
+}

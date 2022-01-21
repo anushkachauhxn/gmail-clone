@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
+import EmailList from './components/EmailList';
 
 function App() {
   return (
-    <Router>5
+    <Router>
       <div className="app">
         <Header />
         
@@ -19,7 +20,7 @@ function App() {
             </Route>
 
             <Route path="/mail">
-              <Mail />
+              {/* <Mail /> */}
             </Route>
           </Switch>
         </div>
