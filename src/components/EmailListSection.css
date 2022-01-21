@@ -1,0 +1,43 @@
+.emailListSection {
+  padding: 15px;
+  min-width: 200px;
+
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+.emailListSection h4 {
+  font-family: "Google Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #5f6368;
+}
+.emailListSection ion-icon {
+  margin-right: 18px;
+  color: #5f6368;
+}
+
+/* Hover */
+.emailListSection:hover {
+  background: #f1f3f4;
+  border-bottom: 3px solid var(--color);
+}
+.emailListSection:hover h4,
+.emailListSection:hover ion-icon {
+  color: black;
+  font-weight: 600;
+}
+
+/* Active Section */
+.emailListSection--selected {
+  border-bottom: 3px solid var(--color);
+}
+.emailListSection--selected:hover h4,
+.emailListSection--selected h4,
+.emailListSection--selected:hover ion-icon,
+.emailListSection--selected ion-icon {
+  color: var(--color);
+  font-weight: 600;
+}

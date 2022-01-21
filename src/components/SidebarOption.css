@@ -1,7 +1,7 @@
 .sidebarOption {
   padding: 0 28px;
   height: 36px;
-  width: 172px;
+  /* width: 172px; */
   border-radius: 0 20px 20px 0;
 
   display: flex;
@@ -35,12 +35,13 @@
 }
 
 /* Active Tab */
-.sidebar--active {
-  background: #fce8e6;
+.sidebar--active,
+.sidebar--active:hover {
+  background: hsla(5, 69%, 54%, 0.15);
 }
 .sidebar--active ion-icon,
 .sidebar--active h3,
 .sidebar--active p {
-  color: #d73125;
+  color: hsl(5, 69%, 54%);
   font-weight: 600;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Checkbox, IconButton, Button } from '@mui/material';
+import { Checkbox, IconButton } from '@mui/material';
 import './EmailList.css';
+import EmailListSection from './EmailListSection';
 
 function EmailList() {
   return (
@@ -17,6 +18,12 @@ function EmailList() {
                 <IconButton><ion-icon name="chevron-back-sharp"></ion-icon></IconButton>
                 <IconButton><ion-icon name="chevron-forward-sharp"></ion-icon></IconButton>
             </div>
+        </div>
+
+        <div className="emailList__sections">
+            <EmailListSection selected={true} title="Primary" Icon={<ion-icon name="file-tray-sharp"></ion-icon>} color="#DB4437" />
+            <EmailListSection title="Social" Icon={<ion-icon name="people-sharp"></ion-icon>} color="#4285F4" />
+            <EmailListSection title="Promotions" Icon={<ion-icon name="pricetag-sharp"></ion-icon>} color="#0F9D58" />
         </div>
     </div>
   );
