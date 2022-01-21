@@ -1,0 +1,46 @@
+.sidebarOption {
+  padding: 0 28px;
+  height: 36px;
+  width: 172px;
+  border-radius: 0 20px 20px 0;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebarOption ion-icon {
+  font-size: 20px;
+  color: #6f6f70;
+}
+
+.sidebarOption h3 {
+  margin-left: 16px;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  color: black;
+}
+
+.sidebarOption p {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 300;
+  color: #5f6368;
+}
+
+/* Hover */
+.sidebarOption:hover {
+  background: #f1f3f4;
+}
+
+/* Active Tab */
+.sidebar--active {
+  background: #fce8e6;
+}
+.sidebar--active ion-icon,
+.sidebar--active h3,
+.sidebar--active p {
+  color: #d73125;
+  font-weight: 600;
+}
