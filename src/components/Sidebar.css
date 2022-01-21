@@ -1,0 +1,31 @@
+/* Compose Button */
+.sidebar__compose {
+  margin: 15px 10px !important;
+  padding: 10px 15px !important;
+  border-radius: 30px !important;
+
+  text-transform: capitalize !important;
+  font-family: "Google Sans", sans-serif !important;
+  color: #d73125 !important;
+  letter-spacing: 0.75px !important;
+  font-weight: bold !important;
+
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.5);
+}
+.sidebar__composeIcon {
+  font-size: 24px !important;
+}
+
+/* Footer */
+.sidebar__footer {
+  width: 254px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #dadcdd;
+}
+.sidebar__footer ion-icon {
+  padding: 2px;
+  font-size: 18px;
+}
