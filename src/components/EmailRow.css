@@ -1,0 +1,70 @@
+.emailRow {
+  margin: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f3f5;
+  cursor: pointer;
+}
+
+/* Options on the left */
+.emailRow__options {
+  display: flex;
+  align-items: center;
+  color: #5f6368;
+}
+.emailRow__checkbox svg {
+  height: 18px;
+  width: 18px;
+  overflow: hidden;
+  color: hsla(213, 5%, 39%, 0.5);
+}
+.emailRow__star ion-icon {
+  font-size: 18px;
+  color: hsla(213, 5%, 39%, 0.5);
+}
+
+/* Title */
+.emailRow__title {
+  margin-left: 6px;
+  flex: 0.16;
+  font-size: 14px;
+}
+
+/* Message */
+.emailRow__message {
+  flex: 0.82;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.emailRow__message h4 {
+  padding: 0 5px;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Description */
+.emailRow__message h4 span {
+  font-weight: normal;
+  color: hsl(210, 5%, 39%);
+}
+
+/* Time */
+.emailRow__time {
+  padding-right: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Hover */
+.emailRow:hover {
+  border-top: 1px solid #f1f3f5;
+  box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.24);
+}
+.emailRow:hover .emailRow__checkbox svg,
+.emailRow:hover .emailRow__star ion-icon {
+  color: hsl(210, 5%, 39%);
+}
