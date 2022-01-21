@@ -1,7 +1,7 @@
 .sidebar {
   flex: 0.2;
   margin-right: 24px;
-  max-width: 300px;
+  max-width: 256px;
 }
 
 /* Compose Button */
@@ -26,7 +26,7 @@
 .sidebar__footer {
   /* width: 254px; */
   width: calc(100% * 0.2 - 24px);
-  max-width: 300px;
+  max-width: 256px;
   position: absolute;
   bottom: 0;
   display: flex;

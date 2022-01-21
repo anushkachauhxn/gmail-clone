@@ -1,0 +1,89 @@
+.mail {
+  flex: 1;
+  background: #f1f3f4;
+}
+
+/* Toolbar at the top */
+.mail__tools {
+  padding: 0 15px 0 5px;
+  height: 48px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: white;
+  color: hsla(213, 4%, 48%, 0.3);
+  user-select: none;
+}
+.mail__tools ion-icon {
+  font-size: 20px;
+  color: #767b81;
+}
+.mail__tools ion-icon:hover {
+  color: #202020;
+}
+.mail__toolsRight ion-icon[name="chevron-back-sharp"],
+.mail__toolsRight ion-icon[name="chevron-forward-sharp"] {
+  font-size: 14px;
+}
+
+/* Body */
+.mail__body {
+  margin: 30px;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  background: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* Body Header */
+.mail__bodyHeader h2 {
+  padding: 20px;
+  font-family: "Google Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.mail__bodySender {
+  padding: 0 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 3px solid #f1f3f4;
+}
+.mail__bodySenderLeft,
+.mail__bodySenderRight {
+  display: flex;
+  align-items: center;
+}
+.mail__bodySenderLeft h4 {
+  margin: 0 10px 0 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+}
+.mail__bodySenderLeft p,
+.mail__bodySenderRight p {
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #888;
+}
+.mail__bodySenderRight ion-icon {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Body Message */
+.mail__bodyMessage {
+  padding: 20px;
+}
+.mail__bodyMessage p {
+  padding: 10px;
+  overflow-wrap: break-word;
+  font-size: 15px;
+  line-height: 28px;
+  color: #222;
+}

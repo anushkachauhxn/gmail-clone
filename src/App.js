@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import EmailList from './components/EmailList';
+import Mail from './components/Mail';
 
 function App() {
   return (
@@ -15,12 +16,12 @@ function App() {
           <Sidebar />
 
           <Switch>
-            <Route path="/">
-              <EmailList />
+            <Route path="/mail">
+              <Mail />
             </Route>
 
-            <Route path="/mail">
-              {/* <Mail /> */}
+            <Route path="/">
+              <EmailList />
             </Route>
           </Switch>
         </div>
