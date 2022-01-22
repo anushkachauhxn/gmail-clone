@@ -29,11 +29,11 @@ function EmailList() {
         const currentDate = new Date().toUTCString().slice(5, 11);
         
         if (date === currentDate) {
-            // old mail - show date eg: Jan 22
-            return date;
-        } else {
             // today's mail - show time eg: 15:56
             return time;
+        } else {
+            // old mail - show date eg: Jan 22
+            return date;
         }
     }
 
