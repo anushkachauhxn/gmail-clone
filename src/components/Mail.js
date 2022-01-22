@@ -2,9 +2,12 @@ import React from 'react';
 import { Avatar, IconButton } from '@mui/material';
 import { useHistory } from 'react-router-dom';
 import './Mail.css';
+import { useSelector } from 'react-redux';
+import { selectOpenMail } from '../features/mailSlice';
 
 function Mail() {
     const history = useHistory();
+    const selectedMail = useSelector(selectOpenMail);
 
     return (
         <div className="mail">
@@ -36,16 +39,16 @@ function Mail() {
 
             <div className="mail__body">
                 <div className="mail__bodyHeader">
-                    <h2>Reliance Jio is hiring for its Internship Program | Genpact, Springworks, Cargill India are also recruiting</h2>
+                    <h2>{selectedMail?.subject}</h2>
                     
                     <div className="mail__bodySender">
                         <div className="mail__bodySenderLeft">
                             <Avatar></Avatar>
-                            <h4>Sender</h4>
-                            <p>&lt;senders@gmail.com&gt;</p>
+                            <h4>{selectedMail?.title}</h4>
+                            <p>&lt;{selectedMail?.title}&gt;</p>
                         </div>
                         <div className="mail__bodySenderRight">
-                            <p>12:02pm</p>
+                            <p>{selectedMail?.time}</p>
                             <IconButton><ion-icon name="star-outline"></ion-icon></IconButton>
                             <IconButton><ion-icon name="arrow-undo-sharp"></ion-icon></IconButton>
                             <IconButton><ion-icon name="ellipsis-vertical-sharp"></ion-icon></IconButton>
@@ -54,7 +57,7 @@ function Mail() {
                 </div>
 
                 <div className="mail__bodyMessage">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aliquid placeat nisi excepturi aut cum laborum ea non vero expedita. Velit dolore totam quaerat, voluptatem omnis ex pariatur? Quasi, maiores?</p>
+                    <p>{selectedMail?.description}</p>
                 </div>
             </div>
         </div>
