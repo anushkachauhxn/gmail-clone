@@ -21,7 +21,7 @@ function EmailRow({ id, title, subject, description, time }) {
     };
 
     return (
-        <div onClick={openMail} className="emailRow">
+        <div key={id} onClick={openMail} className="emailRow">
             <div className="emailRow__options">
                 <Checkbox className="emailRow__checkbox" />
                 <IconButton className="emailRow__star"><ion-icon name="star-outline"></ion-icon></IconButton>

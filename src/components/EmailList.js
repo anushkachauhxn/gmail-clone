@@ -21,7 +21,21 @@ function EmailList() {
                     ));
                 }
             );
-    }, [])
+    }, []);
+
+    const getMailTiming = (timestamp) => {
+        const date = new Date(timestamp?.seconds * 1000).toUTCString().slice(5, 11);
+        const time = new Date(timestamp?.seconds * 1000).toUTCString().slice(17, 22);
+        const currentDate = new Date().toUTCString().slice(5, 11);
+        
+        if (date === currentDate) {
+            // old mail - show date eg: Jan 22
+            return date;
+        } else {
+            // today's mail - show time eg: 15:56
+            return time;
+        }
+    }
 
     return (
         <div className="emailList">
@@ -52,7 +66,7 @@ function EmailList() {
                         title={email.data.to} 
                         subject={email.data.subject}
                         description={email.data.message}
-                        time={new Date(email.data.timestamp?.seconds * 1000).toUTCString()}
+                        time={getMailTiming(email.data.timestamp)}
                     />
                 ))}
             </div>
