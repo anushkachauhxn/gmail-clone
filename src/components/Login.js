@@ -2,7 +2,7 @@ import React from 'react';
 import { auth, provider } from '../firebase';
 import { useDispatch } from 'react-redux';
 import { login } from '../features/userSlice';
-import { Button, IconButton } from '@mui/material';
+import { Button } from '@mui/material';
 import './Login.css';
 import logo from './google_logo.png';
 

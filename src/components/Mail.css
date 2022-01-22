@@ -50,7 +50,6 @@
   padding: 0 20px 10px;
   display: flex;
   justify-content: space-between;
-  align-items: start;
   border-bottom: 3px solid #f1f3f4;
 }
 .mail__bodySenderLeft,

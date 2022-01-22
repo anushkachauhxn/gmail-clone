@@ -10,7 +10,7 @@ import { db } from '../firebase';
 function SendMail() {
     const dispatch = useDispatch();
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = (formData) => {
         db.collection("emails").add({
             to: formData.to,
