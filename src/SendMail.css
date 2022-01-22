@@ -1,0 +1,69 @@
+.sendMail {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+
+  width: 40%;
+  max-width: 500px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid whitesmoke;
+  border-radius: 10px 10px 0 0;
+  background: #404040;
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.24);
+}
+
+.sendMail__header {
+  padding: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sendMail__header h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: whitesmoke;
+}
+.sendMail__header ion-icon {
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+}
+
+.sendMail form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.sendMail form input {
+  padding: 10px;
+  height: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid whitesmoke;
+}
+.sendMail form textarea {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.sendMail__send {
+  margin: 10px 15px !important;
+  text-transform: capitalize !important;
+}
+
+.sendMail__error {
+  position: absolute;
+  bottom: 58px;
+  padding: 2px 12px 6px;
+  background: white;
+  color: red;
+  font-size: 12px;
+  text-align: right;
+}
