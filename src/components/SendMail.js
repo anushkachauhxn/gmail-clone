@@ -1,9 +1,13 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import { useForm } from 'react-hook-form';
+import { useDispatch } from 'react-redux';
+import { closeSendMessage } from '../features/mailSlice';
 import './SendMail.css';
 
 function SendMail() {
+    const dispatch = useDispatch();
+
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = (formData) => {
         console.log(formData)
@@ -13,14 +17,16 @@ function SendMail() {
         <div className="sendMail">
             <div className="sendMail__header">
                 <h3>New Message</h3>
-                <ion-icon className="sendMail__close" name="close-sharp"></ion-icon>
+                <ion-icon 
+                    onClick={() => dispatch(closeSendMessage())} 
+                    className="sendMail__close" name="close-sharp"></ion-icon>
             </div>
 
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input 
                     name="to" 
                     placeholder="To" 
-                    type="text" 
+                    type="email" 
                     {...register("to", { required: true })}
                 />
                 

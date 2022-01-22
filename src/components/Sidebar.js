@@ -1,13 +1,18 @@
 import React from 'react';
 import { Button, IconButton } from '@mui/material';
+import { useDispatch } from 'react-redux';
+import { openSendMessage } from '../features/mailSlice';
 import './Sidebar.css';
 import SidebarOption from './SidebarOption';
 import CreateOutlinedIcon from '@mui/icons-material/CreateOutlined';
 
 function Sidebar() {
+  const dispatch = useDispatch();
+
   return (
     <div className="sidebar">
         <Button 
+            onClick={() => dispatch(openSendMessage())}
             className="sidebar__compose"
             startIcon={<CreateOutlinedIcon className="sidebar__composeIcon" />}
         >Compose</Button>
