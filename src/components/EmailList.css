@@ -14,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #f1f3f5;
+  box-shadow: 0 1px 2px 0 #dadddd;
 }
 
 .emailList__settingsLeft ion-icon {
@@ -28,12 +29,17 @@
 }
 
 .emailList__sections {
-  position: sticky;
-  top: 0;
   background: white;
-  z-index: 999;
-
   display: flex;
   align-items: center;
   border-bottom: 1px solid #f1f3f5;
+}
+
+/* Hide scrollbar */
+.emailList::-webkit-scrollbar {
+  display: none;
+}
+.emailList {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
