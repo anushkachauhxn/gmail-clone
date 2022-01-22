@@ -6,7 +6,6 @@ export const mailSlice = createSlice({
     selectedMail: null,
     sendMessageIsOpen: false,
   },
-  // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
     selectMail: (state, action) => {
       state.selectedMail = action.payload;
